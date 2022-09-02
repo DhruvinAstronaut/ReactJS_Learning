@@ -11,11 +11,28 @@ import ParentComponent from "./components/ParentComponent";
 import IfElse from "./components/IfElse";
 import NameList from "./components/NameList";
 import Form from "./components/Form";
+import RefComp from "./components/RefComp";
+import FocusInput from "./components/FocusInput";
+import ErrorBoundry from "./components/ErrorHandling/ErrorBoundry";
+import ErrorHeroComponent from "./components/ErrorHandling/ErrorHeroComponent";
+import ButtonClick from "./components/HigherOrderComponents/ButtonClick";
+import MouseHover from "./components/HigherOrderComponents/MouseHover";
+
+
 
 function App() {
   return (
     <div className="App">
-      <Form/>
+      <ButtonClick name={'Dhruvin'} />
+      <MouseHover />
+      {/* <ErrorBoundry>
+        <ErrorHeroComponent Username="naviman" />
+        <ErrorHeroComponent Username="batman" />
+        <ErrorHeroComponent Username="superman" />
+      </ErrorBoundry> */}
+      {/* <FocusInput/> */}
+      {/* <RefComp/> */}
+      {/* <Form/> */}
       {/* <NameList/> */}
       {/* <IfElse/> */}
       {/* <ParentComponent/> */}
